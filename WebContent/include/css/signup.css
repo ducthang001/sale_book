@@ -1,0 +1,67 @@
+.signup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 80vh;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup_container{
+    display: flex;
+    height: 100%;
+}
+
+.signup_container_left{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup_container_right{
+    flex: 6;
+    height: 80vh;
+}
+
+.signup_container h2{
+    padding: 30px 0px;
+    color: #e83e8c;
+}
+
+.form_signup label{
+    color: black;
+    padding: 5px 0px;
+    font-family: arial;
+}
+
+.form_signup input{
+    border-color: #e83e8c;
+    outline: none;
+    padding: 7px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.btn_signup_signin button{
+    background-color: #0faf51;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.login_signin a, .losspass a{
+    text-decoration: none;
+    color: #0166d6;
+}
+
+.login a:hover, .losspass a:hover{
+    color: #0faf51;
+}
+
+.signup_container_right{
+    background-image: url(/QLSACH/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

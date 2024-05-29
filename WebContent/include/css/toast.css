@@ -1,0 +1,123 @@
+.toast_container{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    border-left: 8px solid #47f764;
+    border-radius: 7px;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 8%);
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    width: 400px;
+}
+
+.toast_class{
+    position: fixed;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+    z-index: 1000;
+}
+
+.remove_class{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    animation: remove_scale 0.2s forwards ease-in;
+}
+
+.toast_content{
+    display: flex;
+    flex-direction: column;
+    font-family: Nunito, sans-serif;
+    padding: 20px;
+    width: 80%;
+}
+
+.toast_icon{
+    font-size: 35px;
+    color: #47f764;
+    padding: 0px 5px;
+}
+
+.toast_to_left{
+    animation: toast_to_left 1s forwards !important;
+}
+.toast_to_right{
+    animation: toast_to_right 2s forwards !important;
+}
+
+@keyframes toast_to_right {
+    from{
+        right: 0px;
+    }to{
+        right: -500px;
+    }
+}
+
+@keyframes toast_to_left {
+    from{
+        right: -500px;
+    }to{
+        right: 0px;
+    }
+}
+
+.confirm_container{
+    width: 350px;
+    box-shadow: 0 4px 8px #62b0fd, 0 4px 12px rgb(0 0 0 / 8%);
+    transform: scale(2);
+}
+
+.confirm_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* STEP CSS */
+.step_delivery{
+    position: relative;
+}
+
+.progress_delivery {
+    padding: 4px 0px;
+    position: absolute;
+    background-color: #ffc107;
+    width: 90%;
+    z-index: -1;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress_after{
+	width: 0%;
+}
+/*
+.progress_delivery::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.33%;
+    height: 100%;
+    background-color: #28a745;
+}
+
+*/
+
+.one_book{
+    box-shadow: 0 4px 8px #62b0fd, 0 4px 12px rgb(0 0 0 / 8%);
+    margin: 10px 0px;
+}
+
+.rating-color{
+    color: #ffc107;
+}
+
+i.fa.fa-star, .ratings span {
+    font-size: 10px;
+}

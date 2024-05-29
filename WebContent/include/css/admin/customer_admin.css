@@ -1,0 +1,67 @@
+#doan{
+    position: relative;
+}
+
+.background_black{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+h6.font-extrabold.mb-0 a {
+    text-decoration: none;
+}
+
+
+.add_edit_customer_class{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    z-index: 1000;
+    display: none;
+    animation: chayxuong 0.4s forwards ease-in-out;
+}
+
+@keyframes chayxuong {
+  0% { 
+    top: -100%;
+    transform: translate(-50%, -50%);}
+  70% {
+    top: 10%;
+    transform: translate(-50%, 50%);
+    }
+    100% {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }
+}
+
+.btn_close_form{
+    cursor: pointer;
+}
+
+.remove_customer_class{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    animation: remove_scale 0.2s forwards ease-in;
+}
+
+@keyframes remove_scale{
+    from{
+        transform: translate(-50%, -50%) scale(0.3);
+    }to{
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
+.error{
+	color:red;
+}

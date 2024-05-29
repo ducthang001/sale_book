@@ -1,0 +1,427 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --white: #fff;
+    --main: #F5F5F5;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-3{
+    flex: 3;
+}
+
+.flex-7{
+    flex: 7;
+}
+
+.bg_main{
+    background-color: var(--main);
+}
+.bg-white{
+    background-color: var(--white);
+}
+
+.bg-blue{
+    background-color: #e83e8c;
+}
+
+.color-white{
+    color: var(--white);
+}
+
+.pd-5_0{
+    padding: 5px 0px;
+}
+
+.pd-10_0{
+    padding: 10px 0px;
+}
+
+.pd-0_10{
+    padding: 0px 10px;
+}
+
+.pd-l-10{
+    padding-left: 10px;
+}
+
+.mg-l-10{
+    margin-left: 10px;
+}
+
+.pd-10_50{
+    padding: 10px 50px;
+}
+
+.pd-10{
+    padding: 10px;
+}
+
+.mg-10_0{
+    margin: 10px 0;
+}
+
+.mg-20_0{
+    margin: 20px 0;
+}
+
+.mg-20_0{
+    margin: 20px 0px;
+}
+
+.mg-l-10{
+    margin-left: 10px;
+}
+
+._100vw{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+body{
+    width: 100vw;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+}
+
+/* css header and logo */
+header{
+    background-color: #e83e8c;
+}
+
+._1200px{
+    width: 1000px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.nav_left{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 30px;
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.search{
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    min-width: 250px;
+}
+
+.btn_search, .search input{
+    padding: 8px;
+    border-radius: 0.25rem;
+}
+
+.btn_search{
+    background-color: var(--red);
+    padding: 8px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn_search .fa-search, .nav_right .fa-user, .nav_right .fa-shopping-cart{
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav_right .fa-user, .nav_right .fa-shopping-cart{
+    font-size: 20px;
+}
+
+.nav_right a:nth-child(2){
+    margin-left: 20px;
+}
+
+.fa-user:hover, .fa-shopping-cart:hover{
+    color: #ffeb3b;
+}
+
+.btn_search:hover{
+    background-color: #62b0fd;
+}
+
+
+/* css carousel and category */
+.flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex_between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_col_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.flex_col_align_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex_align_center{
+    display: flex;
+    align-items: center;
+}
+
+.overflow_hidden{
+    overflow: hidden;
+}
+
+.category_carousel._1200px{
+    justify-content: space-between;
+}
+
+.category_carousel_left{
+    margin-right: 10px;
+    height: 100%;
+    max-height: 312px;
+    width: 230px;
+    overflow-y: auto;
+}
+
+.category_carousel_left ul li{
+    list-style: none;
+}
+
+.category_carousel_right{
+    height: 312px;
+    width: 760px;
+    position: relative; /* */
+    overflow: hidden; /* */
+}
+
+.carousel_images{
+    position: relative; /* */
+    height: 100%;
+    width: 1000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+}
+
+.carousel_images img{
+    height: 100%;
+    width: 760px;
+    position: relative; /* */
+    
+}
+
+.category_ul a{
+    text-decoration: none;
+}
+
+.category_ul a:hover{
+    color: var(--pink);
+}
+
+.carousel_images{
+    display: flex;
+    overflow: hidden;
+}
+
+.fa-angle-left, .fa-angle-right{
+    font-size: 50px !important;
+    color: #fff;
+}
+
+.pre_bg-main, .next_bg-main{
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+    background-color: var(--pink);
+}
+
+.pre_bg-main{
+    left: 20px;
+}
+
+.next_bg-main{
+    right: 20px;
+}
+
+/* css favorite book */
+
+.favorite_book_list_icon_title img{
+    width: 24px;
+    height: 24px;
+}
+
+.favorite_book{
+    margin: 10px;
+    padding: 10px;
+} 
+
+.favorite_book a{
+    text-decoration: none;
+}
+
+.favorite_book:hover{
+    box-shadow: 0 4px 8px #62b0fd, 0 4px 12px rgb(0 0 0 / 8%);
+    transition: 0.4s ease;
+}
+
+.book_logo img, .book_logo{
+    height: 180px;
+}
+
+.btn_buynow{
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: #48bb78;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s ease all;
+}
+
+.favorite_book:hover .btn_buynow{
+	animation: book_scale 0.2s alternate-reverse infinite;
+}
+
+@keyframes book_scale {
+    from{
+        transform: rotate(10deg);
+    } to{
+        transform: scale(-20deg);
+    } 
+}
+
+.btn_buynow:hover{
+    background-color: #6610f2;
+    transition: 0.4s ease all;
+}
+
+img.icon_sach{
+    animation: image_rotate 1s infinite alternate-reverse;
+}
+
+@keyframes image_rotate {
+    from{
+        transform: rotate(360deg);
+    }to{
+        transform: rotate(0deg);
+    }
+}
+
+.favorite_book.flex_col_center {
+    width: 225px;
+    text-align: center;
+    min-height: 312px;
+    border: 1px solid #e2dede;
+}
+
+.favorite_book_list_icon_title {
+    display: flex;
+    align-items: center;
+}
+
+.favorite_book_list_title{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.book_name{
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+.book_author{
+    color: gray
+}
+
+.book_price{
+    font-weight:600;
+    color: var(--red);
+}
+
+.favorite_book_item{
+    flex-wrap: wrap;
+}
+
+.pagination{display:-ms-flexbox;display:flex;padding-left:0;list-style:none;border-radius:.25rem}.page-link{position:relative;display:block;padding:.5rem .75rem;margin-left:-1px;line-height:1.25;color:#007bff;background-color:#fff;border:1px solid #dee2e6}.page-link:hover{z-index:2;color:#0056b3;text-decoration:none;background-color:#e9ecef;border-color:#dee2e6}.page-link:focus{z-index:2;outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}.page-link:not(:disabled):not(.disabled){cursor:pointer}.page-item:first-child .page-link{margin-left:0;border-top-left-radius:.25rem;border-bottom-left-radius:.25rem}.page-item:last-child .page-link{border-top-right-radius:.25rem;border-bottom-right-radius:.25rem}.page-item.active .page-link{z-index:1;color:#fff;background-color:#007bff;border-color:#007bff}.page-item.disabled .page-link{color:#6c757d;pointer-events:none;cursor:auto;background-color:#fff;border-color:#dee2e6}.pagination-lg .page-link{padding:.75rem 1.5rem;font-size:1.25rem;line-height:1.5}.pagination-lg .page-item:first-child .page-link{border-top-left-radius:.3rem;border-bottom-left-radius:.3rem}.pagination-lg .page-item:last-child .page-link{border-top-right-radius:.3rem;border-bottom-right-radius:.3rem}.pagination-sm .page-link{padding:.25rem .5rem;font-size:.875rem;line-height:1.5}.pagination-sm .page-item:first-child .page-link{border-top-left-radius:.2rem;border-bottom-left-radius:.2rem}.pagination-sm .page-item:last-child .page-link{border-top-right-radius:.2rem;border-bottom-right-radius:.2rem}
+
+.page-item a{
+	text-decoration: none;
+}
+
+.page-item .page-link {
+    font-size: .875rem;
+}
+
+.page-item:first-child {
+    margin-right: 0.4rem;
+}
+
+.page-item:last-child{
+	margin-left: 0.4rem;
+}
+
+.page-link {
+    padding: .375rem 0.75rem;
+}

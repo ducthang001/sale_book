@@ -1,0 +1,44 @@
+.display_none{
+    display: none;
+}
+
+.display_block{
+    display: block;
+}
+
+#doan{
+    position: relative;
+}
+
+.background_black{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+h6.font-extrabold.mb-0 a {
+    text-decoration: none;
+}
+
+.remove_class{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    animation: remove_scale 0.2s forwards ease-in;
+}
+
+@keyframes remove_scale{
+    from{
+        transform: translate(-50%, -50%) scale(0.3);
+    }to{
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
